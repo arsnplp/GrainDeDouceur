@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Esthéticienne - Page de présentation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topnav">
+    <div class="topnav-inner">
+      <a href="index.html" class="topnav-logo">
+        <img src="image/logo.png" alt="Grain de Douceur">
+      </a>
+      <nav class="topnav-links">
+        <a href="#prestations">Prestations</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="#avis">Avis</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="button topnav-cta">Réserver</a>
+    </div>
+  </header>
+
+  <section class="site-header">
+      <div class="site-header-inner">
+        <div class="header-copy">
+          <span class="header-badge">Grain de Douceur</span>
+          <h1>Institut d’esthétique & bien-être</h1>
+          <p>Institut de beauté à Saint-Zacharie depuis 2011 — un havre de paix dédié à votre bien-être et à votre éclat naturel.</p>
+          <a href="#reserve" class="button outline">Réserver ma séance</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="lieu-block">
+      <div class="lieu-inner">
+        <div class="lieu-content">
+          <span class="section-label">Notre espace</span>
+          <h2>Un cocon pensé pour vous</h2>
+          <p class="lieu-lead">Dès que vous franchissez la porte, vous le sentez — quelque chose ici invite à souffler. La lumière naturelle, les teintes douces, le silence apaisé… Tout a été pensé pour que vous vous sentiez bien avant même le début du soin.</p>
+          <p class="lieu-text">Michelle a imaginé chaque détail de son espace : des matières chaleureuses, des plantes vivantes, une décoration raffinée et bienveillante. Ce n'est pas un simple salon — c'est votre refuge, votre moment rien qu'à vous.</p>
+          <ul class="lieu-features">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#d5b89e" fill-opacity=".25"/><path d="M5 8.5l2 2 4-4" stroke="#d5b89e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Lumière naturelle &amp; ambiance douce
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#d5b89e" fill-opacity=".25"/><path d="M5 8.5l2 2 4-4" stroke="#d5b89e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Salle d'attente zen en extérieur
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#d5b89e" fill-opacity=".25"/><path d="M5 8.5l2 2 4-4" stroke="#d5b89e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Parking privé gratuit sur place
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="8" fill="#d5b89e" fill-opacity=".25"/><path d="M5 8.5l2 2 4-4" stroke="#d5b89e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Cabine de soin intimiste &amp; apaisante
+            </li>
+          </ul>
+        </div>
+        <div class="lieu-carousel" id="lieuCarousel" aria-label="Photos de l'institut">
+          <div class="carousel-slides">
+            <div class="carousel-slide active">
+              <picture>
+                <source srcset="image/Lieux/lieu1.webp" type="image/webp">
+                <img src="image/Lieux/lieu1.jpg" alt="Espace onglerie – Institut Grain de Douceur" loading="lazy">
+              </picture>
+            </div>
+            <div class="carousel-slide">
+              <picture>
+                <source srcset="image/Lieux/lieu2.webp" type="image/webp">
+                <img src="image/Lieux/lieu2.jpg" alt="Espace boutique – Institut Grain de Douceur" loading="lazy">
+              </picture>
+            </div>
+            <div class="carousel-slide">
+              <picture>
+                <source srcset="image/Lieux/lieu3.webp" type="image/webp">
+                <img src="image/Lieux/lieu3.jpg" alt="Vue d'ensemble de l'institut Grain de Douceur" loading="lazy">
+              </picture>
+            </div>
+            <div class="carousel-slide">
+              <picture>
+                <source srcset="image/Lieux/lieu4.webp" type="image/webp">
+                <img src="image/Lieux/lieu4.jpg" alt="Cabine de soin – Institut Grain de Douceur" loading="lazy">
+              </picture>
+            </div>
+          </div>
+          <button class="carousel-btn carousel-prev" id="lieuPrev" aria-label="Photo précédente">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M13 4l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button class="carousel-btn carousel-next" id="lieuNext" aria-label="Photo suivante">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="carousel-dots" id="lieuDots">
+            <button class="carousel-dot active" data-idx="0" aria-label="Photo 1"></button>
+            <button class="carousel-dot" data-idx="1" aria-label="Photo 2"></button>
+            <button class="carousel-dot" data-idx="2" aria-label="Photo 3"></button>
+            <button class="carousel-dot" data-idx="3" aria-label="Photo 4"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section class="brands-block">
+    <div class="brands-block-inner">
+      <div class="section-heading centered">
+        <span class="section-label">Marques partenaires</span>
+        <h2>Des produits d'exception</h2>
+        <p>Grain de Douceur sélectionne les meilleures marques professionnelles pour vous garantir qualité et résultats — disponibles à la vente directement à l'institut.</p>
+      </div>
+    </div>
+    <div class="brands-ticker-band" id="brandsTickerBand">
+      <div class="brands-ticker-track" id="brandsTickerTrack"></div>
+    </div>
+    <div class="brands-visual" id="brandsVisual">
+      <div class="brands-bg active" data-bg="0" style="background-image:url('image/produitfond/guerandcosmetique.webp')"></div>
+      <div class="brands-bg" data-bg="1" style="background-image:url('image/produitfond/pronails.webp')"></div>
+      <div class="brands-bg" data-bg="2" style="background-image:url('image/produitfond/paris1944.webp')"></div>
+      <div class="brands-visual-overlay"></div>
+      <div class="brands-block-inner brands-spotlight-inner">
+        <div class="brand-spotlight" id="brandSpotlight">
+          <h3 class="spotlight-name" id="spotlightName"></h3>
+          <p class="spotlight-desc" id="spotlightDesc"></p>
+          <span class="brand-badge">Disponible à l'institut</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-block" id="prestations">
+      <div class="page-grid">
+        <article class="page-card">
+          <a href="onglerie-manucure.html">
+            <div class="page-card-image">
+              <picture>
+                <source srcset="image/Presta/onglerie.webp" type="image/webp">
+                <img src="image/Presta/onglerie.jpg" alt="Onglerie manucure" loading="lazy">
+              </picture>
+            </div>
+            <div class="page-card-content">
+              <span class="page-card-label">Onglerie</span>
+              <h3>Onglerie & Nail Art</h3>
+              <p>Beauté des mains et des pieds : manucure, pose gel, semi-permanent et nail art sur-mesure.</p>
+              <span class="page-card-link">Découvrir</span>
+            </div>
+          </a>
+        </article>
+        <article class="page-card">
+          <a href="soins-du-visage.html">
+            <div class="page-card-image">
+              <picture>
+                <source srcset="image/Presta/soins-visage.webp" type="image/webp">
+                <img src="image/Presta/soins-visage.jpg" alt="Soins du visage" loading="lazy">
+              </picture>
+            </div>
+            <div class="page-card-content">
+              <span class="page-card-label">Soins</span>
+              <h3>Soins du visage & du corps</h3>
+              <p>Soin visage homme/femme, modelages, gommages, vaporisation et relaxations sur-mesure.</p>
+              <span class="page-card-link">Découvrir</span>
+            </div>
+          </a>
+        </article>
+        <article class="page-card">
+          <a href="epilations-cire-jetableepilation-definitive-lumiere-pulsee.html">
+            <div class="page-card-image">
+              <picture>
+                <source srcset="image/Presta/epilation.webp" type="image/webp">
+                <img src="image/Presta/epilation.jpg" alt="Épilation cire" loading="lazy">
+              </picture>
+            </div>
+            <div class="page-card-content">
+              <span class="page-card-label">Épilations</span>
+              <h3>Épilation & photo rajeunissement</h3>
+              <p>Cire jetable, lumière pulsée, électrolyse et dispositif de photo rajeunissement.</p>
+              <span class="page-card-link">Découvrir</span>
+            </div>
+          </a>
+        </article>
+        <article class="page-card">
+          <a href="maquillage.html">
+            <div class="page-card-image">
+              <picture>
+                <source srcset="image/Presta/maquillage.webp" type="image/webp">
+                <img src="image/Presta/maquillage.jpg" alt="Beauté du regard" loading="lazy">
+              </picture>
+            </div>
+            <div class="page-card-content">
+              <span class="page-card-label">Regard</span>
+              <h3>Beauté du regard</h3>
+              <p>Maquillage jour, soir, mariée, coloration cils et sourcils, mascara semi-permanent.</p>
+              <span class="page-card-link">Découvrir</span>
+            </div>
+          </a>
+        </article>
+        <article class="page-card">
+          <a href="soins-du-visage.html">
+            <div class="page-card-image">
+              <picture>
+                <source srcset="image/Presta/soin-homme.webp" type="image/webp">
+                <img src="image/Presta/soin-homme.jpg" alt="Soins homme" loading="lazy">
+              </picture>
+            </div>
+            <div class="page-card-content">
+              <span class="page-card-label">Homme</span>
+              <h3>Soins homme</h3>
+              <p>Soins du visage, épilations et prestations adaptés à la peau masculine.</p>
+              <span class="page-card-link">Découvrir</span>
+            </div>
+          </a>
+        </article>
+        <article class="page-card">
+          <a href="maquillage-permanent.html">
+            <div class="page-card-image">
+              <picture>
+                <source srcset="image/Presta/maquillage-permanent.webp" type="image/webp">
+                <img src="image/Presta/maquillage-permanent.jpg" alt="Maquillage permanent" loading="lazy">
+              </picture>
+            </div>
+            <div class="page-card-content">
+              <span class="page-card-label">Permanent</span>
+              <h3>Maquillage permanent</h3>
+              <p>Microblading, microshading, dermopigmentation sourcils, lèvres et eyeliner.</p>
+              <span class="page-card-link">Découvrir</span>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+  <section class="reviews-block" id="avis">
+    <div class="reviews-inner">
+
+      <div class="reviews-header">
+        <span class="section-label reviews-label">Avis clients</span>
+        <h2>Ce que mes clientes pensent</h2>
+        <div class="reviews-stars-row">
+          <span class="reviews-stars-big">★★★★★</span>
+          <span class="reviews-global-score">5.0 / 5 &nbsp;·&nbsp; 3 avis</span>
+        </div>
+      </div>
+
+      <div class="reviews-list">
+
+        <!-- Review 1 : gauche -->
+        <div class="review-row">
+          <div class="review-meta-row">
+            <div class="review-avatar">J</div>
+            <div class="review-stars-wrap">
+              <div class="review-stars">★★★★★</div>
+              <span class="review-score">5.0 / 5</span>
+            </div>
+          </div>
+          <blockquote class="review-quote">"Michelle est incroyablement douée et attentionnée. Mes ongles sont exactement comme je les voulais — soignés et naturels, mais qui font quand même la différence. Je me suis sentie super à l’aise dès la première séance."</blockquote>
+        </div>
+
+        <div class="reviews-divider"></div>
+
+        <!-- Review 2 : droite -->
+        <div class="review-row review-row--right">
+          <div class="review-meta-row">
+            <div class="review-stars-wrap">
+              <div class="review-stars">★★★★★</div>
+              <span class="review-score">5.0 / 5</span>
+            </div>
+            <div class="review-avatar">S</div>
+          </div>
+          <blockquote class="review-quote">"J’avais un peu peur d’essayer les extensions de cils pour la première fois, mais Michelle a pris le temps de tout m’expliquer. Le résultat est magnifique et la tenue vraiment au top !"</blockquote>
+        </div>
+
+        <div class="reviews-divider"></div>
+
+        <!-- Review 3 : gauche -->
+        <div class="review-row">
+          <div class="review-meta-row">
+            <div class="review-avatar">C</div>
+            <div class="review-stars-wrap">
+              <div class="review-stars">★★★★★</div>
+              <span class="review-score">5.0 / 5</span>
+            </div>
+          </div>
+          <blockquote class="review-quote">"Les soins du visage ont complètement changé mon éclat — j’aurais dû essayer bien plus tôt. Michelle est professionnelle, précise et vraiment à l’écoute. Je reviens dès que possible !"</blockquote>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-block" id="contact">
+    <div class="contact-inner">
+      <div class="contact-copy">
+        <span class="section-label contact-label">Contact</span>
+        <h2>Réservez votre séance</h2>
+        <p>Un rendez-vous personnalisé vous attend dans l’institut Grain de Douceur, à Saint-Zacharie.</p>
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <strong>Adresse</strong>
+            <span>200, Avenue du 8 Mai 1945<br>83640 Saint-Zacharie</span>
+          </div>
+          <div class="contact-info-item">
+            <strong>Téléphone</strong>
+            <a href="tel:+33684980989">06.84.98.09.89</a>
+          </div>
+          <div class="contact-info-item">
+            <strong>Horaires</strong>
+            <span>Mardi – Samedi, 9h – 18h<br>Sur rendez-vous</span>
+          </div>
+          <div class="contact-info-item">
+            <strong>Parking</strong>
+            <span>Gratuit sur place</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-map">
+        <iframe
+          src="https://maps.google.com/maps?q=200+Avenue+du+8+Mai+1945,+83640+Saint-Zacharie,+France&output=embed&z=15"
+          width="100%"
+          height="360"
+          style="border:0; display:block;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Institut Grain de Douceur – Saint-Zacharie">
+        </iframe>
+        <div class="contact-map-cta">
+          <a href="tel:+33684980989" class="button contact-map-btn">Prendre rendez-vous</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-main">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Grain de Douceur</span>
+        <p>Institut de beauté & soins esthétiques<br>à Saint-Zacharie</p>
+        <address>
+          200, Avenue du 8 Mai 1945<br>
+          83640 Saint-Zacharie<br>
+          <a href="tel:+33684980989">06.84.98.09.89</a>
+        </address>
+      </div>
+      <div class="footer-col">
+        <h4>Horaires</h4>
+        <p>Du mardi au samedi</p>
+        <p>9h – 18h</p>
+        <p>Sur rendez-vous</p>
+        <span class="footer-parking">Parking gratuit</span>
+      </div>
+      <div class="footer-col">
+        <h4>Prestations</h4>
+        <ul>
+          <li>Soins du visage & du corps</li>
+          <li>Maquillage permanent</li>
+          <li>Épilations & lumière pulsée</li>
+          <li>Onglerie & manucure</li>
+          <li>Extensions de cils</li>
+          <li>Beauté du regard</li>
+          <li>Bons cadeaux</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Informations</h4>
+        <nav class="footer-links">
+          <a href="index.html#contact">Contactez-nous</a>
+          <a href="index.html#contact">Nous trouver</a>
+          <a href="cgu.html">CGU</a>
+          <a href="a-propos.html">À propos</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Grain de Douceur – Institut d’esthétique à Saint-Zacharie</span>
+      <span>Site réalisé par <a href="https://acco-lab.fr/" target="_blank" rel="noopener noreferrer">ACCO-LAB</a></span>
+    </div>
+  </footer>
+
+<script>
+(function () {
+  var slides  = document.querySelectorAll('.carousel-slide');
+  var dots    = document.querySelectorAll('.carousel-dot');
+  var prevBtn = document.getElementById('lieuPrev');
+  var nextBtn = document.getElementById('lieuNext');
+  if (!slides.length || !prevBtn || !nextBtn) return;
+
+  var current = 0;
+
+  function goTo(idx) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (idx + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+  }
+
+  prevBtn.addEventListener('click', function () { goTo(current - 1); });
+  nextBtn.addEventListener('click', function () { goTo(current + 1); });
+  dots.forEach(function (dot) {
+    dot.addEventListener('click', function () { goTo(+this.getAttribute('data-idx')); });
+  });
+
+  setInterval(function () { goTo(current + 1); }, 4500);
+}());
+</script>
+
+<script>
+(function () {
+  var brands = [
+    {
+      name: 'Guérande Cosmétique',
+      desc: 'Soins du visage bio et naturels à base d\'eaux mères des marais salants de Guérande — une gamme douce et efficace pour révéler l\'éclat naturel de votre peau.'
+    },
+    {
+      name: 'ProNails',
+      desc: 'La référence en onglerie professionnelle — des formules premium pour une tenue parfaite, une couleur longue durée et une santé optimale de vos ongles.'
+    },
+    {
+      name: '1944 Paris',
+      desc: 'Maquillage haut de gamme alliant beauté et soin — des formules longue tenue qui subliment et prennent soin de votre peau tout au long de la journée.'
+    }
+  ];
+
+  // Ces valeurs doivent correspondre aux width CSS de .ticker-brand et .ticker-sep
+  var BRAND_W = 280;
+  var SEP_W   = 60;
+  var SLOT_W  = BRAND_W + SEP_W;           // 340px par marque
+  var SET_W   = brands.length * SLOT_W;    // 1020px (1 jeu complet)
+  var COPIES  = 3;                          // 3 jeux → track width = 3060px
+  var DURATION_S = 12;                      // durée d'un cycle complet
+  var BRAND_MS   = DURATION_S / brands.length * 1000; // 4000ms par marque
+
+  var band        = document.getElementById('brandsTickerBand');
+  var track       = document.getElementById('brandsTickerTrack');
+  var spotlightEl = document.getElementById('brandSpotlight');
+  var spotName    = document.getElementById('spotlightName');
+  var spotDesc    = document.getElementById('spotlightDesc');
+  var bgEls       = document.querySelectorAll('.brands-bg');
+
+  if (!band || !track) return;
+
+  // Construction du track avec 3 copies identiques
+  for (var c = 0; c < COPIES; c++) {
+    brands.forEach(function (b, i) {
+      var el = document.createElement('span');
+      el.className = 'ticker-brand';
+      el.textContent = b.name;
+      el.setAttribute('data-brand-idx', i);
+      track.appendChild(el);
+      var sep = document.createElement('span');
+      sep.className = 'ticker-sep';
+      sep.setAttribute('aria-hidden', 'true');
+      sep.textContent = '·';
+      track.appendChild(sep);
+    });
+  }
+
+  // Largeur fixe du track → -33.333% = exactement -SET_W
+  track.style.width = (COPIES * SET_W) + 'px';
+
+  // Calcul du décalage initial pour centrer la marque 0 au démarrage
+  // La marque 0 du 2e jeu est à : SET_W + BRAND_W/2 depuis le bord gauche du track
+  // On veut qu'elle soit à bandW/2 (centre du bandeau)
+  // → translateX nécessaire = -(SET_W + BRAND_W/2 - bandW/2)
+  // → délai = -distance / vitesse
+  var bandW  = band.offsetWidth || window.innerWidth;
+  var speed  = SET_W / DURATION_S; // px/s
+  var offset = SET_W + BRAND_W / 2 - bandW / 2;
+  var delayS = -(offset / speed);
+
+  // Lancement de l'animation CSS (boucle parfaitement fluide via keyframes)
+  track.style.animationName           = 'tickerScroll';
+  track.style.animationDuration       = DURATION_S + 's';
+  track.style.animationTimingFunction = 'linear';
+  track.style.animationIterationCount = 'infinite';
+  track.style.animationDelay          = delayS + 's';
+
+  // Gestion de la description et de la classe active
+  var brandEls = track.querySelectorAll('.ticker-brand');
+  var current  = 0;
+  var spotTimer;
+
+  function updateActive(idx) {
+    brandEls.forEach(function (el) {
+      el.classList.toggle('active', +el.getAttribute('data-brand-idx') === idx);
+    });
+    bgEls.forEach(function (el) {
+      el.classList.toggle('active', +el.getAttribute('data-bg') === idx);
+    });
+  }
+
+  function showSpotlight(idx) {
+    spotlightEl.classList.remove('visible');
+    clearTimeout(spotTimer);
+    spotTimer = setTimeout(function () {
+      spotName.textContent = brands[idx].name;
+      spotDesc.textContent = brands[idx].desc;
+      spotlightEl.classList.add('visible');
+    }, 300);
+  }
+
+  // Initialisation
+  updateActive(0);
+  spotName.textContent = brands[0].name;
+  spotDesc.textContent = brands[0].desc;
+  setTimeout(function () { spotlightEl.classList.add('visible'); }, 120);
+
+  // Synchronisation avec l'animation CSS (même cadence)
+  setInterval(function () {
+    current = (current + 1) % brands.length;
+    updateActive(current);
+    showSpotlight(current);
+  }, BRAND_MS);
+}());
+</script>
+</body>
+</html>
