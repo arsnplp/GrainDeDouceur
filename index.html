@@ -18,6 +18,9 @@
         <a href="#avis">Avis</a>
         <a href="#contact">Contact</a>
       </nav>
+      <button class="topnav-burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
       <a href="#contact" class="button topnav-cta">Réserver</a>
     </div>
   </header>
@@ -102,32 +105,6 @@
       </div>
     </section>
 
-  <section class="brands-block">
-    <div class="brands-block-inner">
-      <div class="section-heading centered">
-        <span class="section-label">Marques partenaires</span>
-        <h2>Des produits d'exception</h2>
-        <p>Grain de Douceur sélectionne les meilleures marques professionnelles pour vous garantir qualité et résultats — disponibles à la vente directement à l'institut.</p>
-      </div>
-    </div>
-    <div class="brands-ticker-band" id="brandsTickerBand">
-      <div class="brands-ticker-track" id="brandsTickerTrack"></div>
-    </div>
-    <div class="brands-visual" id="brandsVisual">
-      <div class="brands-bg active" data-bg="0" style="background-image:url('image/produitfond/guerandcosmetique.webp')"></div>
-      <div class="brands-bg" data-bg="1" style="background-image:url('image/produitfond/pronails.webp')"></div>
-      <div class="brands-bg" data-bg="2" style="background-image:url('image/produitfond/paris1944.webp')"></div>
-      <div class="brands-visual-overlay"></div>
-      <div class="brands-block-inner brands-spotlight-inner">
-        <div class="brand-spotlight" id="brandSpotlight">
-          <h3 class="spotlight-name" id="spotlightName"></h3>
-          <p class="spotlight-desc" id="spotlightDesc"></p>
-          <span class="brand-badge">Disponible à l'institut</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="services-block" id="prestations">
       <div class="page-grid">
         <article class="page-card">
@@ -195,7 +172,7 @@
           </a>
         </article>
         <article class="page-card">
-          <a href="soins-du-visage.html">
+          <a href="soins-homme.html">
             <div class="page-card-image">
               <picture>
                 <source srcset="image/Presta/soin-homme.webp" type="image/webp">
@@ -228,6 +205,51 @@
         </article>
       </div>
     </section>
+
+  <section class="evenement-block">
+    <div class="evenement-inner">
+      <div class="evenement-visual">
+        <img src="image/maquillageevent.png" alt="Maquillage événement">
+      </div>
+      <div class="evenement-content">
+        <span class="section-label" style="color:var(--accent);background:rgba(213,184,158,0.15);">Événement</span>
+        <h2>Maquillage événement</h2>
+        <p>Parce que certains moments méritent d'être immortalisés, Michelle crée un maquillage sur-mesure qui dure, qui sublime et qui vous ressemble — de la première à la dernière photo. Mariage, soirée, shooting ou rendez-vous galant : une prestation pensée dans les moindres détails pour que vous soyez parfaite.</p>
+        <ul class="evenement-tarifs">
+          <li>Maquillage jour — <span>35€</span></li>
+          <li>Maquillage soir — <span>45€</span></li>
+          <li>Maquillage mariée (+ 1 essai offert) — <span>90€</span></li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="brands-block">
+    <div class="brands-block-inner">
+      <div class="section-heading centered">
+        <span class="section-label">Marques partenaires</span>
+        <h2>Des produits d'exception</h2>
+        <p>Grain de Douceur sélectionne les meilleures marques professionnelles pour vous garantir qualité et résultats — disponibles à la vente directement à l'institut.</p>
+      </div>
+    </div>
+    <div class="brands-ticker-band" id="brandsTickerBand">
+      <div class="brands-ticker-track" id="brandsTickerTrack"></div>
+    </div>
+    <div class="brands-visual" id="brandsVisual">
+      <div class="brands-bg active" data-bg="0" style="background-image:url('image/produitfond/guerandcosmetique.webp')"></div>
+      <div class="brands-bg" data-bg="1" style="background-image:url('image/produitfond/pronails.webp')"></div>
+      <div class="brands-bg" data-bg="2" style="background-image:url('image/produitfond/paris1944.webp')"></div>
+      <div class="brands-visual-overlay"></div>
+      <div class="brands-block-inner brands-spotlight-inner">
+        <div class="brand-spotlight" id="brandSpotlight">
+          <h3 class="spotlight-name" id="spotlightName"></h3>
+          <p class="spotlight-desc" id="spotlightDesc"></p>
+          <span class="brand-badge">Disponible à l'institut</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="reviews-block" id="avis">
     <div class="reviews-inner">
@@ -513,5 +535,6 @@
   }, BRAND_MS);
 }());
 </script>
+<script src="nav.js"></script>
 </body>
 </html>
