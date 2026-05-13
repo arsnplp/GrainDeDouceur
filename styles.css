@@ -288,7 +288,7 @@ body {
   margin-left: -50vw;
   margin-right: -50vw;
   padding: 42px 38px 60px;
-  background-image: url("image/header.png");
+  background-image: url("image/header.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1217,17 +1217,19 @@ body {
 
 .spotlight-name {
   margin: 0;
-  font-size: 1.35rem;
+  font-size: 1.45rem;
   color: var(--text);
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: -0.01em;
 }
 
 .spotlight-desc {
   margin: 0;
   max-width: 560px;
-  color: var(--muted);
+  color: #5c4a44;
   line-height: 1.8;
-  font-size: 0.93rem;
+  font-size: 0.95rem;
+  font-weight: 500;
 }
 
 .brand-badge {
@@ -1290,6 +1292,23 @@ body {
   }
   .brands-block-inner {
     padding: 0 24px;
+  }
+  .brands-bg.active {
+    opacity: 0.55;
+  }
+  .brands-visual-overlay {
+    display: block;
+    position: absolute;
+    inset: 0;
+    background: rgba(244, 239, 232, 0.6);
+    z-index: 1;
+  }
+  .brands-visual {
+    min-height: 0;
+  }
+  .brands-spotlight-inner {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 
@@ -1431,6 +1450,15 @@ body {
   margin: 0;
   overflow: hidden;
   border-radius: 0;
+}
+
+@media (max-width: 680px) {
+  .page-detail-hero {
+    height: 160px;
+  }
+  .page-detail-hero img {
+    object-position: center center;
+  }
 }
 
 .page-detail-hero picture {
@@ -1726,9 +1754,9 @@ body {
 }
 
 .brand-credit img {
-  height: 36px;
+  height: 52px;
   width: auto;
-  max-width: 140px;
+  max-width: 180px;
   object-fit: contain;
   opacity: 0.8;
 }
@@ -2298,7 +2326,7 @@ body {
   }
 
   .brands-block {
-    padding: 60px 0;
+    padding: 48px 0 0;
   }
 
   .header-bar {
@@ -2334,6 +2362,7 @@ body {
 
   .site-header {
     padding: 32px 20px 40px;
+    background-position: right center;
   }
 
   .site-header h1 {
@@ -2375,4 +2404,10 @@ body {
     align-items: flex-start;
     gap: 8px;
   }
+}
+
+@media (max-width: 680px) {
+  .brands-bg[data-bg="0"] { background-image: url('image/produitfond/guerandcosmetiqueTel.webp') !important; }
+  .brands-bg[data-bg="1"] { background-image: url('image/produitfond/pronailsTel.webp') !important; }
+  .brands-bg[data-bg="2"] { background-image: url('image/produitfond/paris1944Tel.webp') !important; }
 }
