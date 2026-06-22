@@ -1481,19 +1481,18 @@ body {
   gap: 6px;
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--muted);
+  color: var(--text);
   text-decoration: none;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
   padding: 8px 14px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--text);
   border-radius: 999px;
   background: #fff;
-  transition: color 0.2s, border-color 0.2s;
+  transition: opacity 0.2s;
 }
 
 .back-link:hover {
-  color: var(--accent);
-  border-color: var(--accent);
+  opacity: 0.65;
 }
 
 .page-detail-content {
