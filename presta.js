@@ -3,7 +3,7 @@
   if (!groups.length) return;
 
   groups.forEach(function (group, idx) {
-    var header = group.querySelector(':scope > strong');
+    var header = group.querySelector(':scope > strong, :scope > h2');
     if (!header) return;
 
     // Wrap everything after <strong> in .accordion-body

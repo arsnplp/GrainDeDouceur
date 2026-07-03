@@ -1659,7 +1659,8 @@ body {
 }
 
 /* ── Accordion header ── */
-.detail-group > strong {
+.detail-group > strong,
+.detail-group > h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1673,13 +1674,16 @@ body {
   color: var(--text);
   transition: color 0.2s;
   gap: 16px;
+  margin: 0;
 }
 
-.detail-group > strong:hover {
+.detail-group > strong:hover,
+.detail-group > h2:hover {
   color: var(--accent);
 }
 
-.detail-group > strong::after {
+.detail-group > strong::after,
+.detail-group > h2::after {
   content: '';
   display: block;
   flex-shrink: 0;
@@ -1693,11 +1697,13 @@ body {
   transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s;
 }
 
-.detail-group.open > strong {
+.detail-group.open > strong,
+.detail-group.open > h2 {
   color: var(--accent);
 }
 
-.detail-group.open > strong::after {
+.detail-group.open > strong::after,
+.detail-group.open > h2::after {
   transform: rotate(45deg);
   background-color: rgba(213, 184, 158, 0.15);
 }
